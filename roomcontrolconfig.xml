@@ -1,0 +1,41 @@
+<Extensions>
+  <Version>1.7</Version>
+  <Panel>
+    <Order>1</Order>
+    <PanelId>panel_1</PanelId>
+    <Origin>local</Origin>
+    <Type>Home</Type>
+    <Icon>Language</Icon>
+    <Color>#00D6A2</Color>
+    <Name>Panel</Name>
+    <ActivityType>Custom</ActivityType>
+    <Page>
+      <Name>Launch Simulation</Name>
+      <Row>
+        <Name>N°1: Too Many People</Name>
+        <Widget>
+          <WidgetId>bouton_1</WidgetId>
+          <Type>Button</Type>
+          <Options>size=1;icon=blue</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>N°2: Air Renewal</Name>
+        <Widget>
+          <WidgetId>bouton_2</WidgetId>
+          <Type>Button</Type>
+          <Options>size=1;icon=green</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>N°3: Footprint Dashboard</Name>
+        <Widget>
+          <WidgetId>bouton_3</WidgetId>
+          <Type>Button</Type>
+          <Options>size=1;icon=yellow</Options>
+        </Widget>
+      </Row>
+      <Options>hideRowNames=0</Options>
+    </Page>
+  </Panel>
+</Extensions>
