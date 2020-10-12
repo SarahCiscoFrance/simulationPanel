@@ -2,40 +2,237 @@
   <Version>1.7</Version>
   <Panel>
     <Order>1</Order>
-    <PanelId>panel_1</PanelId>
+    <PanelId>panel-1</PanelId>
     <Origin>local</Origin>
     <Type>Home</Type>
-    <Icon>Language</Icon>
-    <Color>#00D6A2</Color>
-    <Name>Panel</Name>
+    <Icon>Sliders</Icon>
+    <Color>#A866FF</Color>
+    <Name>Devs</Name>
     <ActivityType>Custom</ActivityType>
     <Page>
-      <Name>Launch Simulation</Name>
+      <Name>Page</Name>
       <Row>
-        <Name>N°1: Too Many People</Name>
+        <Name/>
         <Widget>
-          <WidgetId>bouton_1</WidgetId>
+          <WidgetId>widget_5</WidgetId>
+          <Name>Too Many People</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>bouton_too_many</WidgetId>
           <Type>Button</Type>
           <Options>size=1;icon=blue</Options>
         </Widget>
       </Row>
       <Row>
-        <Name>N°2: Air Renewal</Name>
+        <Name/>
         <Widget>
-          <WidgetId>bouton_2</WidgetId>
+          <WidgetId>widget_6</WidgetId>
+          <Name>Air Renewal (!! Lock the Device !!)</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>bouton_air_renewal</WidgetId>
           <Type>Button</Type>
           <Options>size=1;icon=green</Options>
         </Widget>
       </Row>
       <Row>
-        <Name>N°3: Footprint Dashboard</Name>
+        <Name/>
         <Widget>
-          <WidgetId>bouton_3</WidgetId>
+          <WidgetId>widget_7</WidgetId>
+          <Name>Footprint Dashboard</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>bouton_footprint</WidgetId>
           <Type>Button</Type>
           <Options>size=1;icon=yellow</Options>
         </Widget>
       </Row>
-      <Options>hideRowNames=0</Options>
+      <Row>
+        <Name/>
+        <Widget>
+          <WidgetId>widget_8</WidgetId>
+          <Name>Force Standby Mode</Name>
+          <Type>Text</Type>
+          <Options>size=3;fontSize=normal;align=left</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>bouton_standby</WidgetId>
+          <Type>Button</Type>
+          <Options>size=1;icon=red</Options>
+        </Widget>
+      </Row>
+      <Options>hideRowNames=1</Options>
+    </Page>
+    <Page>
+      <Name>Language</Name>
+      <Row>
+        <Name>Row</Name>
+        <Widget>
+          <WidgetId>lang_description</WidgetId>
+          <Name>Veuillez choisir une langue</Name>
+          <Type>Text</Type>
+          <Options>size=4;align=center;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Row</Name>
+        <Widget>
+          <WidgetId>lang_spinner</WidgetId>
+          <Type>Spinner</Type>
+          <Options>size=4;style=horizontal</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Row</Name>
+        <Widget>
+          <WidgetId>lang_submit</WidgetId>
+          <Name>Submit</Name>
+          <Type>Button</Type>
+          <Options>size=4</Options>
+        </Widget>
+      </Row>
+      <PageId>lang_title</PageId>
+      <Options>hideRowNames=1</Options>
+    </Page>
+    <Page>
+      <Name>Proximity</Name>
+      <Row>
+        <Name>Activer Proximity</Name>
+        <Widget>
+          <WidgetId>t_p-mode</WidgetId>
+          <Type>ToggleButton</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Volume des ultrasons</Name>
+        <Widget>
+          <WidgetId>sp_a-ultrasound-maxvolume</WidgetId>
+          <Type>Spinner</Type>
+          <Options>size=2;style=plusminus</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>s_a-ultrasound-maxvolume</WidgetId>
+          <Type>Slider</Type>
+          <Options>size=2</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Partager depuis un client</Name>
+        <Widget>
+          <WidgetId>ts_p-services-contentshare-fromclients</WidgetId>
+          <Type>ToggleButton</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Partager vers un client</Name>
+        <Widget>
+          <WidgetId>ts_p-services-contentshare-toclients</WidgetId>
+          <Type>ToggleButton</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Contrôle d'appel</Name>
+        <Widget>
+          <WidgetId>ts_p-services-callcontrol</WidgetId>
+          <Type>ToggleButton</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+  </Panel>
+  <Panel>
+    <Order>2</Order>
+    <PanelId>panel-2</PanelId>
+    <Origin>local</Origin>
+    <Type>InCall</Type>
+    <Icon>Sliders</Icon>
+    <Color>#A866FF</Color>
+    <Name>Devs</Name>
+    <ActivityType>Custom</ActivityType>
+    <Page>
+      <Name>Proximity</Name>
+      <Row>
+        <Name>Activer Proximity</Name>
+        <Widget>
+          <WidgetId>t_p-mode</WidgetId>
+          <Type>ToggleButton</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Volume des ultrasons</Name>
+        <Widget>
+          <WidgetId>sp_a-ultrasound-maxvolume</WidgetId>
+          <Type>Spinner</Type>
+          <Options>size=2;style=plusminus</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>s_a-ultrasound-maxvolume</WidgetId>
+          <Type>Slider</Type>
+          <Options>size=2</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Partager depuis un client</Name>
+      </Row>
+      <Row>
+        <Name>Partager vers un client</Name>
+        <Widget>
+          <WidgetId>ts_p-services-contentshare-toclients</WidgetId>
+          <Type>ToggleButton</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Contrôle d'appel</Name>
+        <Widget>
+          <WidgetId>ts_p-services-callcontrol</WidgetId>
+          <Type>ToggleButton</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+    <Page>
+      <Name>Language</Name>
+      <Row>
+        <Name>Row</Name>
+        <Widget>
+          <WidgetId>lang_description</WidgetId>
+          <Name>Veuillez choisir une langue</Name>
+          <Type>Text</Type>
+          <Options>size=4;align=center;fontSize=small</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Row</Name>
+        <Widget>
+          <WidgetId>lang_spinner</WidgetId>
+          <Type>Spinner</Type>
+          <Options>size=4;style=horizontal</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Row</Name>
+        <Widget>
+          <WidgetId>lang_submit</WidgetId>
+          <Name>Submit</Name>
+          <Type>Button</Type>
+          <Options>size=4</Options>
+        </Widget>
+      </Row>
+      <PageId>lang_title</PageId>
+      <Options>hideRowNames=1</Options>
     </Page>
   </Panel>
 </Extensions>
